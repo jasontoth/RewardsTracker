@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC462B61212CC4DC0030D2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B60212CC4DC0030D2B3 /* AppDelegate.swift */; };
+		AC462B63212CC4DC0030D2B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B62212CC4DC0030D2B3 /* ViewController.swift */; };
+		AC462B66212CC4DC0030D2B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC462B64212CC4DC0030D2B3 /* Main.storyboard */; };
+		AC462B69212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC462B67212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld */; };
+		AC462B6B212CC4DE0030D2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC462B6A212CC4DE0030D2B3 /* Assets.xcassets */; };
+		AC462B6E212CC4DE0030D2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC462B6C212CC4DE0030D2B3 /* LaunchScreen.storyboard */; };
+		AC462B79212CC4DE0030D2B3 /* RewardsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B78212CC4DE0030D2B3 /* RewardsTrackerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC462B75212CC4DE0030D2B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC462B55212CC4DC0030D2B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC462B5C212CC4DC0030D2B3;
+			remoteInfo = RewardsTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC462B5D212CC4DC0030D2B3 /* RewardsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RewardsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC462B60212CC4DC0030D2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC462B62212CC4DC0030D2B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC462B65212CC4DC0030D2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC462B68212CC4DC0030D2B3 /* RewardsTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RewardsTracker.xcdatamodel; sourceTree = "<group>"; };
+		AC462B6A212CC4DE0030D2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC462B6D212CC4DE0030D2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC462B6F212CC4DE0030D2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC462B74212CC4DE0030D2B3 /* RewardsTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardsTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC462B78212CC4DE0030D2B3 /* RewardsTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTrackerTests.swift; sourceTree = "<group>"; };
+		AC462B7A212CC4DE0030D2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC462B5A212CC4DC0030D2B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC462B71212CC4DE0030D2B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC462B54212CC4DC0030D2B3 = {
+			isa = PBXGroup;
+			children = (
+				AC462B5F212CC4DC0030D2B3 /* RewardsTracker */,
+				AC462B77212CC4DE0030D2B3 /* RewardsTrackerTests */,
+				AC462B5E212CC4DC0030D2B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC462B5E212CC4DC0030D2B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC462B5D212CC4DC0030D2B3 /* RewardsTracker.app */,
+				AC462B74212CC4DE0030D2B3 /* RewardsTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC462B5F212CC4DC0030D2B3 /* RewardsTracker */ = {
+			isa = PBXGroup;
+			children = (
+				AC462B60212CC4DC0030D2B3 /* AppDelegate.swift */,
+				AC462B62212CC4DC0030D2B3 /* ViewController.swift */,
+				AC462B64212CC4DC0030D2B3 /* Main.storyboard */,
+				AC462B6A212CC4DE0030D2B3 /* Assets.xcassets */,
+				AC462B6C212CC4DE0030D2B3 /* LaunchScreen.storyboard */,
+				AC462B6F212CC4DE0030D2B3 /* Info.plist */,
+				AC462B67212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld */,
+			);
+			path = RewardsTracker;
+			sourceTree = "<group>";
+		};
+		AC462B77212CC4DE0030D2B3 /* RewardsTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC462B78212CC4DE0030D2B3 /* RewardsTrackerTests.swift */,
+				AC462B7A212CC4DE0030D2B3 /* Info.plist */,
+			);
+			path = RewardsTrackerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC462B5C212CC4DC0030D2B3 /* RewardsTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC462B7D212CC4DE0030D2B3 /* Build configuration list for PBXNativeTarget "RewardsTracker" */;
+			buildPhases = (
+				AC462B59212CC4DC0030D2B3 /* Sources */,
+				AC462B5A212CC4DC0030D2B3 /* Frameworks */,
+				AC462B5B212CC4DC0030D2B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RewardsTracker;
+			productName = RewardsTracker;
+			productReference = AC462B5D212CC4DC0030D2B3 /* RewardsTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC462B73212CC4DE0030D2B3 /* RewardsTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC462B80212CC4DE0030D2B3 /* Build configuration list for PBXNativeTarget "RewardsTrackerTests" */;
+			buildPhases = (
+				AC462B70212CC4DE0030D2B3 /* Sources */,
+				AC462B71212CC4DE0030D2B3 /* Frameworks */,
+				AC462B72212CC4DE0030D2B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC462B76212CC4DE0030D2B3 /* PBXTargetDependency */,
+			);
+			name = RewardsTrackerTests;
+			productName = RewardsTrackerTests;
+			productReference = AC462B74212CC4DE0030D2B3 /* RewardsTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC462B55212CC4DC0030D2B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jason Toth";
+				TargetAttributes = {
+					AC462B5C212CC4DC0030D2B3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					AC462B73212CC4DE0030D2B3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = AC462B5C212CC4DC0030D2B3;
+					};
+				};
+			};
+			buildConfigurationList = AC462B58212CC4DC0030D2B3 /* Build configuration list for PBXProject "RewardsTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC462B54212CC4DC0030D2B3;
+			productRefGroup = AC462B5E212CC4DC0030D2B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC462B5C212CC4DC0030D2B3 /* RewardsTracker */,
+				AC462B73212CC4DE0030D2B3 /* RewardsTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC462B5B212CC4DC0030D2B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC462B6E212CC4DE0030D2B3 /* LaunchScreen.storyboard in Resources */,
+				AC462B6B212CC4DE0030D2B3 /* Assets.xcassets in Resources */,
+				AC462B66212CC4DC0030D2B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC462B72212CC4DE0030D2B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC462B59212CC4DC0030D2B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC462B63212CC4DC0030D2B3 /* ViewController.swift in Sources */,
+				AC462B69212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld in Sources */,
+				AC462B61212CC4DC0030D2B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC462B70212CC4DE0030D2B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC462B79212CC4DE0030D2B3 /* RewardsTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC462B76212CC4DE0030D2B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC462B5C212CC4DC0030D2B3 /* RewardsTracker */;
+			targetProxy = AC462B75212CC4DE0030D2B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC462B64212CC4DC0030D2B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC462B65212CC4DC0030D2B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC462B6C212CC4DE0030D2B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC462B6D212CC4DE0030D2B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC462B7B212CC4DE0030D2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC462B7C212CC4DE0030D2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC462B7E212CC4DE0030D2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RewardsTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jtoth.RewardsTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC462B7F212CC4DE0030D2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RewardsTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jtoth.RewardsTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC462B81212CC4DE0030D2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RewardsTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jtoth.RewardsTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RewardsTracker.app/RewardsTracker";
+			};
+			name = Debug;
+		};
+		AC462B82212CC4DE0030D2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RewardsTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jtoth.RewardsTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RewardsTracker.app/RewardsTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC462B58212CC4DC0030D2B3 /* Build configuration list for PBXProject "RewardsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC462B7B212CC4DE0030D2B3 /* Debug */,
+				AC462B7C212CC4DE0030D2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC462B7D212CC4DE0030D2B3 /* Build configuration list for PBXNativeTarget "RewardsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC462B7E212CC4DE0030D2B3 /* Debug */,
+				AC462B7F212CC4DE0030D2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC462B80212CC4DE0030D2B3 /* Build configuration list for PBXNativeTarget "RewardsTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC462B81212CC4DE0030D2B3 /* Debug */,
+				AC462B82212CC4DE0030D2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC462B67212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC462B68212CC4DC0030D2B3 /* RewardsTracker.xcdatamodel */,
+			);
+			currentVersion = AC462B68212CC4DC0030D2B3 /* RewardsTracker.xcdatamodel */;
+			path = RewardsTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC462B55212CC4DC0030D2B3 /* Project object */;
+}
