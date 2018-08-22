@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Reward List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RewardsTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RewardListViewController" customModule="RewardsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,22 +33,22 @@
             </objects>
             <point key="canvasLocation" x="983" y="791"/>
         </scene>
-        <!--View Controller-->
+        <!--Reward Detail View Controller-->
         <scene sceneID="YAo-HZ-Nu6">
             <objects>
-                <viewController id="ZaX-H2-GNu" sceneMemberID="viewController">
+                <viewController id="ZaX-H2-GNu" customClass="RewardDetailViewController" customModule="RewardsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AmL-XA-iF8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-dz-4p0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-Icon-File.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-dz-4p0">
                                 <rect key="frame" x="47" y="84" width="280" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="hZe-Xh-a2E"/>
                                     <constraint firstAttribute="width" constant="280" id="qZg-ym-fdN"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-0b-VQ0">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-0b-VQ0">
                                 <rect key="frame" x="47.5" y="259" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -57,6 +57,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-Zu-9U6">
                                 <rect key="frame" x="170" y="309" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="3dt-Qo-lNr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,10 +76,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="ONp-N5-g3Q">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="8Ts-aE-sSL"/>
-                            <barButtonItem title="Photos" id="9cn-oG-A8C"/>
+                            <barButtonItem systemItem="camera" id="8Ts-aE-sSL">
+                                <connections>
+                                    <action selector="addNewPhoto:" destination="ZaX-H2-GNu" id="oJN-gK-Eso"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="9cn-oG-A8C">
+                                <connections>
+                                    <action selector="addExistingPhoto:" destination="ZaX-H2-GNu" id="HoE-ef-yhb"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="PQO-0b-VQ0" id="m15-S2-QGW"/>
+                        <outlet property="rewardImageView" destination="Eum-dz-4p0" id="8OT-qQ-FBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eI-VX-luZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,4 +116,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Placeholder-Icon-File.png" width="1900" height="1200"/>
+    </resources>
 </document>

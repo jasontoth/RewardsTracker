@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC462B61212CC4DC0030D2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B60212CC4DC0030D2B3 /* AppDelegate.swift */; };
-		AC462B63212CC4DC0030D2B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B62212CC4DC0030D2B3 /* ViewController.swift */; };
+		AC462B63212CC4DC0030D2B3 /* RewardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B62212CC4DC0030D2B3 /* RewardListViewController.swift */; };
 		AC462B66212CC4DC0030D2B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC462B64212CC4DC0030D2B3 /* Main.storyboard */; };
 		AC462B69212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC462B67212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld */; };
 		AC462B6B212CC4DE0030D2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC462B6A212CC4DE0030D2B3 /* Assets.xcassets */; };
 		AC462B6E212CC4DE0030D2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC462B6C212CC4DE0030D2B3 /* LaunchScreen.storyboard */; };
 		AC462B79212CC4DE0030D2B3 /* RewardsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B78212CC4DE0030D2B3 /* RewardsTrackerTests.swift */; };
+		AC462B84212DF9C80030D2B3 /* Placeholder-Icon-File.png in Resources */ = {isa = PBXBuildFile; fileRef = AC462B83212DF9C80030D2B3 /* Placeholder-Icon-File.png */; };
+		AC462B86212DFADF0030D2B3 /* RewardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC462B85212DFADF0030D2B3 /* RewardDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,7 @@
 /* Begin PBXFileReference section */
 		AC462B5D212CC4DC0030D2B3 /* RewardsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RewardsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC462B60212CC4DC0030D2B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC462B62212CC4DC0030D2B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC462B62212CC4DC0030D2B3 /* RewardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewController.swift; sourceTree = "<group>"; };
 		AC462B65212CC4DC0030D2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC462B68212CC4DC0030D2B3 /* RewardsTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RewardsTracker.xcdatamodel; sourceTree = "<group>"; };
 		AC462B6A212CC4DE0030D2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		AC462B74212CC4DE0030D2B3 /* RewardsTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardsTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC462B78212CC4DE0030D2B3 /* RewardsTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTrackerTests.swift; sourceTree = "<group>"; };
 		AC462B7A212CC4DE0030D2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC462B83212DF9C80030D2B3 /* Placeholder-Icon-File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Placeholder-Icon-File.png"; sourceTree = "<group>"; };
+		AC462B85212DFADF0030D2B3 /* RewardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 		AC462B5F212CC4DC0030D2B3 /* RewardsTracker */ = {
 			isa = PBXGroup;
 			children = (
+				AC462B83212DF9C80030D2B3 /* Placeholder-Icon-File.png */,
 				AC462B60212CC4DC0030D2B3 /* AppDelegate.swift */,
-				AC462B62212CC4DC0030D2B3 /* ViewController.swift */,
+				AC462B62212CC4DC0030D2B3 /* RewardListViewController.swift */,
+				AC462B85212DFADF0030D2B3 /* RewardDetailViewController.swift */,
 				AC462B64212CC4DC0030D2B3 /* Main.storyboard */,
 				AC462B6A212CC4DE0030D2B3 /* Assets.xcassets */,
 				AC462B6C212CC4DE0030D2B3 /* LaunchScreen.storyboard */,
@@ -182,6 +188,7 @@
 			files = (
 				AC462B6E212CC4DE0030D2B3 /* LaunchScreen.storyboard in Resources */,
 				AC462B6B212CC4DE0030D2B3 /* Assets.xcassets in Resources */,
+				AC462B84212DF9C80030D2B3 /* Placeholder-Icon-File.png in Resources */,
 				AC462B66212CC4DC0030D2B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC462B63212CC4DC0030D2B3 /* ViewController.swift in Sources */,
+				AC462B86212DFADF0030D2B3 /* RewardDetailViewController.swift in Sources */,
+				AC462B63212CC4DC0030D2B3 /* RewardListViewController.swift in Sources */,
 				AC462B69212CC4DC0030D2B3 /* RewardsTracker.xcdatamodeld in Sources */,
 				AC462B61212CC4DC0030D2B3 /* AppDelegate.swift in Sources */,
 			);
