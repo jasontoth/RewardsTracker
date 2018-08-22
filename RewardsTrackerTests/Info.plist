@@ -16,6 +16,8 @@
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>User can utilize existing photos for their rewards</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>
