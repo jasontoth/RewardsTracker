@@ -53,5 +53,7 @@ class RewardDetailViewController: UIViewController, UIImagePickerControllerDeleg
         reward.image = UIImagePNGRepresentation(rewardImageView.image!)
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
     }
 }

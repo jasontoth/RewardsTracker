@@ -8,18 +8,43 @@
 
 import UIKit
 
-class RewardListViewController: UIViewController {
+class RewardListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var rewards : [Reward] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+            rewards = try context.fetch(Reward.fetchRequest())
+            tableView.reloadData()
+        }
+        catch {
+            
+        }
     }
-
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rewards.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        
+        let reward = rewards[indexPath.row]
+        cell.textLabel?.text = reward.name
+        cell.imageView?.image = UIImage(data: reward.image as! Data)
+        return cell
+    }
 }
 
