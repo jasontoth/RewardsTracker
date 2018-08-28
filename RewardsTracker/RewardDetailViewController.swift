@@ -56,6 +56,12 @@ class RewardDetailViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func addNewPhoto(_ sender: Any) {
+        
+        // Give image picker the ability to source data from saved photos
+        imagePicker.sourceType = .camera
+        
+        // Present the user with a dialog where they can select existing photos
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func saveReward(_ sender: Any) {
