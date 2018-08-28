@@ -12,13 +12,26 @@ class RewardDetailViewController: UIViewController, UIImagePickerControllerDeleg
 
     @IBOutlet weak var rewardImageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     var imagePicker = UIImagePickerController()
+    var reward : Reward? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        
+        if reward != nil {
+            rewardImageView.image = UIImage(data: reward!.image as! Data)
+            nameTextField.text = reward!.name
+            
+            saveButton.setTitle("Update", for: .normal)
+        } else {
+            deleteButton.isHidden = true
+        }
+
     }
     
     @IBAction func addExistingPhoto(_ sender: Any) {
@@ -46,14 +59,29 @@ class RewardDetailViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func saveReward(_ sender: Any) {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
-        let reward = Reward(context: context)
-        reward.name = nameTextField.text
-        reward.image = UIImagePNGRepresentation(rewardImageView.image!)
+        if reward != nil {
+            reward!.name = nameTextField.text
+            reward!.image = UIImagePNGRepresentation(rewardImageView.image!)
+        } else {
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            let newReward = Reward(context: context)
+            newReward.name = nameTextField.text
+            newReward.image = UIImagePNGRepresentation(rewardImageView.image!)
+        }
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        
         navigationController!.popViewController(animated: true)
     }
+    
+    @IBAction func deleteReward(_ sender: Any) {
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        context.delete(reward!)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        navigationController!.popViewController(animated: true)
+    }
+    
 }

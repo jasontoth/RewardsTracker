@@ -46,5 +46,16 @@ class RewardListViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.imageView?.image = UIImage(data: reward.image as! Data)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let reward = rewards[indexPath.row]
+        performSegue(withIdentifier: "rewardSegue", sender: reward)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! RewardDetailViewController
+        nextVC.reward = sender as? Reward
+    }
 }
 

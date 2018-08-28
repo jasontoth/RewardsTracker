@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="Gec-Su-x8L">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="h6S-zX-dQr">
                             <connections>
-                                <segue destination="ZaX-H2-GNu" kind="show" id="Gfz-hk-I5W"/>
+                                <segue destination="ZaX-H2-GNu" kind="show" identifier="rewardSegue" id="Gfz-hk-I5W"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,15 +76,25 @@
                                     <action selector="saveReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="3dt-Qo-lNr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cny-iL-oZl">
+                                <rect key="frame" x="164.5" y="354" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="NyO-5A-6wd"/>
+                                    <action selector="saveReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="tge-8x-TOa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jTJ-Zu-9U6" firstAttribute="top" secondItem="PQO-0b-VQ0" secondAttribute="bottom" constant="20" id="3m2-QS-3sf"/>
                             <constraint firstItem="PQO-0b-VQ0" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="3ov-nY-Fe9"/>
                             <constraint firstItem="Eum-dz-4p0" firstAttribute="top" secondItem="xDu-3A-FYJ" secondAttribute="top" constant="20" id="B9O-pL-hET"/>
+                            <constraint firstItem="cny-iL-oZl" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="CXD-cr-mdJ"/>
                             <constraint firstItem="jTJ-Zu-9U6" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="DNL-Q5-eLR"/>
                             <constraint firstItem="PQO-0b-VQ0" firstAttribute="width" secondItem="Eum-dz-4p0" secondAttribute="width" id="Qma-hZ-VLm"/>
                             <constraint firstItem="Eum-dz-4p0" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="TIJ-gy-i03"/>
+                            <constraint firstItem="cny-iL-oZl" firstAttribute="top" secondItem="jTJ-Zu-9U6" secondAttribute="bottom" constant="15" id="Tzk-CC-X49"/>
                             <constraint firstItem="PQO-0b-VQ0" firstAttribute="top" secondItem="Eum-dz-4p0" secondAttribute="bottom" constant="25" id="gJR-xj-Z2o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xDu-3A-FYJ"/>
@@ -104,8 +114,10 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="cny-iL-oZl" id="aKf-zw-2dq"/>
                         <outlet property="nameTextField" destination="PQO-0b-VQ0" id="m15-S2-QGW"/>
                         <outlet property="rewardImageView" destination="Eum-dz-4p0" id="8OT-qQ-FBp"/>
+                        <outlet property="saveButton" destination="jTJ-Zu-9U6" id="CLe-A5-cVL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eI-VX-luZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
