@@ -29,9 +29,7 @@ class RewardListViewController: UIViewController, UITableViewDelegate, UITableVi
             rewards = try context.fetch(Reward.fetchRequest())
             tableView.reloadData()
         }
-        catch {
-            
-        }
+        catch {}
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,6 +54,20 @@ class RewardListViewController: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextVC = segue.destination as! RewardDetailViewController
         nextVC.reward = sender as? Reward
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            let reward = rewards[indexPath.row]
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            context.delete(reward)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            do {
+                rewards = try context.fetch(Reward.fetchRequest())
+                tableView.reloadData()
+            }
+            catch {}
+        }
     }
 }
 
