@@ -46,7 +46,6 @@ class RewardListViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let reward = rewards[indexPath.row]
         performSegue(withIdentifier: "rewardSegue", sender: reward)
     }

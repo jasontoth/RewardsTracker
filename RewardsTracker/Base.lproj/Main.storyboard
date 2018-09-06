@@ -57,45 +57,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-Icon-File.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-dz-4p0">
-                                <rect key="frame" x="47" y="84" width="280" height="150"/>
+                                <rect key="frame" x="47" y="174" width="280" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="hZe-Xh-a2E"/>
                                     <constraint firstAttribute="width" constant="280" id="qZg-ym-fdN"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-0b-VQ0">
-                                <rect key="frame" x="47.5" y="259" width="280" height="30"/>
+                                <rect key="frame" x="47" y="124" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-Zu-9U6">
-                                <rect key="frame" x="170" y="309" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="saveReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="3dt-Qo-lNr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cny-iL-oZl">
-                                <rect key="frame" x="164.5" y="354" width="45" height="30"/>
-                                <state key="normal" title="Delete"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cny-iL-oZl">
+                                <rect key="frame" x="164.5" y="622" width="45" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="NyO-5A-6wd"/>
                                     <action selector="saveReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="tge-8x-TOa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-Zu-9U6">
+                                <rect key="frame" x="316" y="84" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveReward:" destination="ZaX-H2-GNu" eventType="touchUpInside" id="3dt-Qo-lNr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jTJ-Zu-9U6" firstAttribute="top" secondItem="PQO-0b-VQ0" secondAttribute="bottom" constant="20" id="3m2-QS-3sf"/>
                             <constraint firstItem="PQO-0b-VQ0" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="3ov-nY-Fe9"/>
-                            <constraint firstItem="Eum-dz-4p0" firstAttribute="top" secondItem="xDu-3A-FYJ" secondAttribute="top" constant="20" id="B9O-pL-hET"/>
+                            <constraint firstItem="jTJ-Zu-9U6" firstAttribute="top" secondItem="xDu-3A-FYJ" secondAttribute="top" constant="20" id="7mf-hf-D1q"/>
+                            <constraint firstItem="xDu-3A-FYJ" firstAttribute="bottom" secondItem="cny-iL-oZl" secondAttribute="bottom" constant="15" id="BHq-v5-3sT"/>
                             <constraint firstItem="cny-iL-oZl" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="CXD-cr-mdJ"/>
-                            <constraint firstItem="jTJ-Zu-9U6" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="DNL-Q5-eLR"/>
+                            <constraint firstItem="Eum-dz-4p0" firstAttribute="top" secondItem="PQO-0b-VQ0" secondAttribute="bottom" constant="20" id="LYh-YI-weO"/>
                             <constraint firstItem="PQO-0b-VQ0" firstAttribute="width" secondItem="Eum-dz-4p0" secondAttribute="width" id="Qma-hZ-VLm"/>
                             <constraint firstItem="Eum-dz-4p0" firstAttribute="centerX" secondItem="AmL-XA-iF8" secondAttribute="centerX" id="TIJ-gy-i03"/>
-                            <constraint firstItem="cny-iL-oZl" firstAttribute="top" secondItem="jTJ-Zu-9U6" secondAttribute="bottom" constant="15" id="Tzk-CC-X49"/>
-                            <constraint firstItem="PQO-0b-VQ0" firstAttribute="top" secondItem="Eum-dz-4p0" secondAttribute="bottom" constant="25" id="gJR-xj-Z2o"/>
+                            <constraint firstItem="PQO-0b-VQ0" firstAttribute="top" secondItem="xDu-3A-FYJ" secondAttribute="top" constant="60" id="e97-e5-UB6"/>
+                            <constraint firstItem="xDu-3A-FYJ" firstAttribute="trailing" secondItem="jTJ-Zu-9U6" secondAttribute="trailing" constant="25" id="g42-gU-i64"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xDu-3A-FYJ"/>
                     </view>
